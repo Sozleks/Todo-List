@@ -50,7 +50,7 @@
 
 ### Installation & Usage:
 > [!WARNING]
-> __Attention:__ when launching the program for the first time, you need to use operation 1!
+> __Attention:__ before using, you need to install and launch Docker!
 - __Installation__ of program:
   1. Go to: https://github.com/Sozleks/Todo-List/releases
   2. Click left mouse button by ``Todo_List.zip``
