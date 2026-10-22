@@ -49,8 +49,13 @@
    - CSS (3)
 
 ### Installation & Usage:
-- For __install__ application:
-  1. Open the required folder
-  2. Click up right mouse button
-  3. Choose "Open Git Bash here"
-  4. Enter: ``git clone https://github.com/Sozleks/Todo-List.git``
+> [!WARNING]
+> __Attention:__ when launching the program for the first time, you need to use operation 1!
+- __Installation__ of program:
+  1. Go to: https://github.com/Sozleks/Todo-List/releases
+  2. Click left mouse button by ``Todo_List.zip``
+  3. After downloading, unpack the archive into the desired folder
+- __Usage__ of programm:
+  1. You need to install Docker if it’s not already installed
+  2. After that you need to launch Docker Desktop
+  3. In the folder with the installed program click left mouse button by ``run.bat``
