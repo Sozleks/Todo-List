@@ -1,61 +1,57 @@
 # Todo List
 
-## Web-application for tracking of performing tasks
+## Web application for tracking and managing tasks
 
-### Base capabilities:
- - __Add__ new tasks to list
- - __Mark__ active tasks as done
- - __Delete__ any tasks
+### Base Capabilities
+- __Add__ new tasks to the list
+- __Mark__ active tasks as done
+- __Delete__ any tasks
 
-### Primary features:
- - All added tasks saving to database automatically
- - Adaptive user interface for any devices
- - Tasks may be sorted by their status
- - Modern style of user interface
+### Primary Features
+- __Automated Storage:__ All added tasks are saved to the database automatically
+- __Responsive Design:__ Adaptive user interface that works on any device
+- __Task Filtering:__ Tasks can be sorted and filtered by their status
+- __Modern UI:__ Clean, intuitive, and modern user interface style
 
-### Demonstration:
- - __Add__ new task to List:
+### Demonstration
+- __Add__ new task to the list:
+  ![Add new](/pictures/add_tasks.gif)
+- __Add__ a new __long__ task:
+  ![Add new long](/pictures/add_long_task.gif)
+- __Mark__ tasks as __done__:
+  ![Mark done](/pictures/mark_tasks.gif)
+- __Filter__ tasks by status:
+  ![Moving by status](/pictures/move_by_status.gif)
+- __Delete__ tasks:
+  ![Delete all tasks](/pictures/delete_tasks.gif)
 
-![Add new](/pictures/add_tasks.gif)
-
- - __Add__ new __long__ task:
-
-![Add new long](/pictures/add_long_task.gif)
-
- - __Mark__ any tasks as __done__:
-
-![Mark done](/pictures/mark_tasks.gif)
-
- - __Moving__ by status of tasks:
-
-![Moving by status](/pictures/move_by_status.gif)
-
- - __Delete__ all tasks:
-
-![Delete all tasks](/pictures/delete_tasks.gif)
-
-### Tech Stack:
+### Tech Stack
 1. __Backend:__
-   - Oracle JDK (21.0.12.1)
+   - Oracle JDK (21)
    - Spring Boot (4.1.1)
-   - Spring MVC (7.0.9)
-   - Spring Data JPA (4.1.1)
+   - Spring MVC
+   - Spring Data JPA
    - Hibernate (7.4.5)
-   - Lombok (262.10968.63)
+   - Lombok
    - Maven (4.0.0)
    - Docker Compose (3.8)
+     
 2. __Frontend:__
    - JSP + JSTL (3.0.1)
    - CSS (3)
+### Installation & Usage
+> [!IMPORTANT]
+> __Prerequisites:__ You must have [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running on your machine before starting the application.
 
-### Installation & Usage:
-> [!WARNING]
-> __Attention:__ before using, you need to install and launch Docker!
-- __Installation__ of program:
-  1. Go to: https://github.com/Sozleks/Todo-List/releases
-  2. Click left mouse button by ``Todo_List.zip``
-  3. After downloading, unpack the archive into the desired folder
-- __Usage__ of programm:
-  1. You need to install Docker if it’s not already installed
-  2. After that you need to launch Docker Desktop
-  3. In the folder with the installed program click left mouse button by ``run.bat``
+#### How to install:
+1. Go to the [Releases](https://github.com/Sozleks/Todo-List/releases) page
+2. Download the `Todo_List.zip` file
+3. Unpack the downloaded archive into your desired folder
+
+#### How to use:
+1. Make sure **Docker Desktop** is launched
+2. Open the folder with the unpacked program
+3. Double-click (or right-click and run) the `run.bat` file
+
+### License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
