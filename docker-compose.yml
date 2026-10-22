@@ -1,0 +1,27 @@
+services:
+  postgres-db:
+    image: postgres:15-alpine
+    container_name: postgres-todo
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - ${DB_PORT}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  app:
+    image: todo-list-app:latest
+    container_name: spring-web-todo
+    ports:
+      - ${APP_PORT}
+    depends_on:
+      - postgres-db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-db:5432/todo_list
+      SPRING_DATASOURCE_USERNAME: ${DB_USER}
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD}
+
+volumes:
+  pgdata:

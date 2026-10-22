@@ -1,0 +1,217 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.todo-container {
+    width: 100%;
+    max-width: 420px;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    margin: 15px;
+}
+h1 { 
+    font-size: 42px; 
+    font-weight: 800; 
+    margin: 0 0 10px 0; 
+    letter-spacing: -0.5px;
+    color: #000000;
+}
+.tabs { 
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 25px;
+    padding-bottom: 0;
+}
+.tab {
+    text-decoration: none;
+    color: #8e8e93;
+    margin-right: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 9px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+.tab:hover {
+    color: #000000;
+}
+.tab.active {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    font-weight: 600;
+}
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+.task-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    width: 100%;
+}
+.task-box {
+    flex-grow: 1;
+    border: 1px solid #1c1c1e;
+    border-radius: 12px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 46px;
+    height: auto;
+    box-sizing: border-box;
+    gap: 12px;
+}
+
+.task-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    flex-grow: 1;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+
+    padding-right: 5px;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: #8e8e93;
+}
+.btn-check {
+    background: #1c1c1e;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease;
+}
+.btn-check:hover {
+    background: #3a3a3c;
+}
+.btn-delete {
+    background: #1c1c1e;
+    border: none;
+    border-radius: 12px;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0;
+}
+.btn-delete:hover {
+    background: #2c2c2e;
+}
+.trash-icon {
+    width: 12px;
+    height: 14px;
+    border: 2px solid #ffffff;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    position: relative;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+.trash-icon::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background: #ffffff;
+    top: -4px;
+    left: -4px;
+    border-radius: 1px;
+}
+.trash-icon::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 2px;
+    border: 2px solid #ffffff;
+    border-bottom: none;
+    top: -8px;
+    left: 1px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    box-sizing: border-box;
+}
+.add-form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.input-task {
+    flex-grow: 1;
+    border: 1px solid #1c1c1e;
+    border-radius: 12px;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #000000;
+    height: 46px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+.input-task:focus {
+    border-color: #8e8e93;
+}
+.input-task::placeholder {
+    color: #aeaeb2;
+}
+.btn-add {
+    background: #1c1c1e;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 0 22px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    height: 46px;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease;
+}
+.btn-add:hover {
+    background: #2c2c2e;
+}
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10px;
+    text-align: center;
+    animation: fadeIn 0.4s ease;
+}
+.empty-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0 0 6px 0;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
