@@ -53,5 +53,12 @@
 2. Open the folder with the unpacked program
 3. Double-click (or right-click and run) the `run.bat` file
 
+### Contact
+* 💻 __GitHub:__ [Sozleks](https://github.com/Sozleks)
+* ✈️ __Telegram:__ [@sozleks](https://t.me/sozleks)
+* 📧 __Email:__ [sozleks.dev@gmail.com](mailto:sozleks.dev@gmail.com)
+
+Feel free to reach out if you have any questions, suggestions, or just want to connect!
+
 ### License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
