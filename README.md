@@ -41,7 +41,7 @@
    - CSS (3)
 ### Installation & Usage
 > [!IMPORTANT]
-> __Prerequisites:__ You must have [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running on your machine before starting the application.
+> You must have [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running on your machine before starting the application.
 
 #### How to install:
 1. Go to the [Releases](https://github.com/Sozleks/Todo-List/releases) page
